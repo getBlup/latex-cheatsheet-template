@@ -1,0 +1,1 @@
+{"rule":"DE_CASE","sentence":"^\\QAutor: Daia Robbi Date: 23.09.2025 Vorlesung: Informationen und Codierungen Maximale Länge: 14 Seiten Erlaubte Hilfsmittel:\\E$"}
