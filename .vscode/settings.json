@@ -18,17 +18,15 @@
   "diffEditor.hideUnchangedRegions.enabled": true,
   "workbench.secondarySideBar.defaultVisibility": "hidden",
 
-  //Everything below this is copied from tutorial
   //Tutorial: https://paulwintz.com/latex-in-vscode/
 
-  // Treat new files (before first save) as LaTeX files.
   "files.defaultLanguage": "latex",
-  // Treat LaTeX package (.sty) and class (.cls) files as LaTeX files.
+  
   "files.associations": {
     "*.sty": "latex",
     "*.cls": "latex"
   },
-  // Hide the following file types from the VS Code folder list.
+
   "files.exclude": {
     "**/*.4ct": true,
     "**/*.4tc": true,
@@ -61,24 +59,13 @@
   "latex-workshop.view.pdf.color.dark.pageBorderColor": "#809080",
   "latex-workshop.view.pdf.color.light.pageBorderColor": "#809080",
   "latex-workshop.intellisense.package.dirs": [
-    // List any folders that contain additional LaTeX package (.sty) 
-    // or class (.cls) files, so that intellisense will use them 
-    // for auto-complete suggestions.
-    "packages",
-    "%WORKSPACE_FOLDER%/packages"
   ],
-  //TODO: add packages
-  "latex-workshop.intellisense.package.extra": [
-    "examplepackage1",
-    "examplepackage2"
-  ],
+
   "latex-workshop.intellisense.update.aggressive.enabled": true,
 
   //TODO: not sure if i want this, try it out
   "latex-workshop.hover.preview.cursor.enabled": false,
   "latex-workshop.hover.preview.enabled": false,
-
-
 
   "pasteImage.insertPattern": "\\begin{center}\n\t\t\\includegraphics[width=\\linewidth]{pasted-images/${imageFileName}}\n\t\\end{center}",
   "pasteImage.filePathConfirmInputBoxMode": "onlyName",
@@ -88,125 +75,25 @@
   "pasteImage.defaultName": "${currentFileNameWithoutExt}-HH-mm-ss",
   "pasteImage.path": "${currentFileDir}/pasted-images",
   
-  //TODO: Regex rules to find errors
-  //Writing and testing: https://regex101.com/
-  "dryerLint.ruleSets[]": {
-    "language": "latex",
-    "rules": [
-      {
-        /// Place rules here...
-        // Check for \cref{}, \cite{}, \ref{}, or \eqref{} occurring without arguments.
-        "name": "Empty Reference or Citation",
-        "message": "Missing argument to \\cref, \\cite, \\ref, or \\eqref.",
-        "pattern": "\\\\(cref|eqref|ref|cite)\\{\\s*\\}",
-        "severity": "Error"
-      },
-      {
-        // Check that a comma-separated list of labels passed to 
-        // \cref or \cite does have spaces after any commas.
-        // Although a trailing space is permitted in labels, it 
-        // would be better to revise the label by removing the space.
-        "name": "Reference has a space after the comma",
-        "message": "The argument to \\cref or \\cite has a comma followed by a space. This typically indicates an error because the space will be read as a part of the label.",
-        "pattern": "(\\\\(?:cref|cite)\\{[^\\}]*)\\,\\ ",
-        "severity": "Warning"
-      },
-      {
-        // Check that \label{} does not contain a comma or a backslash.
-        "name": "Illegal Character in \\label{}",
-        "message": "\\label{...} must not contain \",\" or \"\\\".",
-        // Unescaped Regex: \\label\{[^\}]*[,\\][^\}]*\}
-        "pattern": "\\\\label\\{[^\\}]*[\\\\,][^\\}]*\\}",
-        "severity": "Error"
-      },
-      {
-        "name": "Inline equation with empty contents: \"$ $\".",
-        "pattern": "\\$[ ]+\\$",
-        "severity": "Warning",
-        "message": "Inline equation with empty contents: \"$ $\"."
-      },
-      {
-        // Check for a space before the reference to an equation. 
-        // This rule requires that you label all equations with a prefix "eq:".
-        "name": "Missing non-breaking space before cleveref equation reference",
-        "message": "Use \"~\" (non-breaking space) before referencing an equation to prevent awkward line breaks.",
-        "pattern": "[ ]\\\\cref\\{eq:",
-        "severity": "Information",
-        "fix": "~\\cref{eq:"
-      },
-      {
-        "name": "Punctuation outside Display Equation",
-        "pattern": "\\\\][.,;]",
-        "severity": "Warning",
-        "message": "Place punctuation inside display equation, before \"\\]\"."
-      },
-      {
-        "name": "Multiline equation environment has extra line at end",
-        "pattern": "(?:\\\\){2}[ \\t]*\\r?\\n[ \\t]*\\\\end{(?:align[*]?|aligned|cases)}",
-        "severity": "Warning", 
-        "message": "Extra line break at the end of environment.",
-        "maxLines": 2
-      },
-    ]
-  },
-
-  //Extension: LTeX+
-  "ltex.latex.commands": {
-    "\\tableofcontents[]": "ignore", 
-    "\\@ifclassloaded{}{}{}": "ignore",
-    "\\includeonly{}": "ignore",  
-    "\\texttt{}": "dummy", // Inline formatting for code.
-    "\\newbool{}": "ignore",  
-    "\\setbool{}": "ignore",
-    "\\setbool{}{}": "ignore",
-    // Macros and environments definitions
-    "\\newcommand{}{}": "ignore",  
-    "\\renewcommand{}{}": "ignore", 
-    "\\newenvironment{}[][]{}{}": "ignore", 
-    "\\newenvironment{}[]{}{}": "ignore", 
-    "\\newenvironment{}": "ignore",  
-    "\\NewDocumentCommand{}{}{}": "ignore",  
-    "\\NewEnviron{}[]{}": "ignore",  
-    "\\newtheoremstyle{}{}{}{}{}{}{}{}{}": "ignore",  
-    "\\DeclarePairedDelimiterX{}[]{}{}": "ignore", 
-    "\\DeclarePairedDelimiter{}{}{}": "ignore", 
-    // Beamer
-    "\\setbeamertemplate{}[]{}": "ignore", 
-    "\\setbeamercolor{}{}": "ignore",  
-    "\\setbeamerfont{}{}": "ignore", 
-    "\\usebeamercolor[]{}": "ignore", 
-    "\\usebeamertemplate{}[]": "ignore",
-    "\\setbeamertemplate{}{}": "ignore", 
-    "\\setbeamertemplate{}[]": "ignore", 
-    "\\usebeamertemplate{}[]{}": "ignore",
-    "\\setbeamerfont{}": "ignore", 
-    "\\addtolength{}{}": "ignore", 
-    "\\movie{}{}": "ignore",
-    "\\movie[]{}{}": "ignore",
-    // Citations and references
-    "\\cite{}": "dummy",
-    "\\nocite{}": "ignore",
-    "\\cref[]{}": "dummy", 
-    "\\crefformat{}{}": "ignore",  
-    "\\Crefformat{}{}": "ignore", 
-    "\\crefmultiformat{}{}{}{}{}": "ignore",  
-    "\\Crefmultiformat{}{}{}{}{}": "ignore", 
-    "\\crtcrefreference{}": "dummy",  
-    // Changes annotations
-    "\\deleted{}": "ignore",
-    "\\todo{}": "ignore",
-    "\\todo[]{}": "ignore",
-    // ...
-  },
-  
-  //TODO: decide if i want this
+  "ltex.language": "de-DE",
   "ltex.additionalRules.enablePickyRules": true,
   "ltex.diagnosticSeverity": {
-        "default": "information", 
-        "MORFOLOGIK_RULE_EN_US": "warning", // Spelling errors.
-        "PASSIVE_VOICE": "hint",
-        "ENGLISH_WORD_REPEAT_BEGINNING_RULE": "hint",
-        "TOO_LONG_SENTENCE": "hint"
-  },
+    "default": "information",
+
+    // --- Orthografie ---
+    "MORFOLOGIK_RULE_DE": "warning",          // Deutsche Rechtschreibung
+    "MORFOLOGIK_RULE_DE_PROPER": "warning",   // Eigennamen
+
+    // --- Grammatik ---
+    "GERMAN_COMPOUND_SENTENCES": "information", 
+    "WORD_REPEAT_RULE": "hint",               // Wortwiederholung
+    "DE_CASE": "warning",                     // Kasusfehler (z.B. Dativ/Akkusativ)
+
+    // --- Stil ---
+    "PASSIVE_VOICE": "hint",                  // Passivgebrauch
+    "TOO_LONG_SENTENCE": "hint",              // Zu lange Sätze
+    "REDUNDANCY": "information",              // Überflüssige Wörter
+    "DE_REPEATED_WORDS": "hint"               // Doppelungen wie „der der“
+  }
 }
 

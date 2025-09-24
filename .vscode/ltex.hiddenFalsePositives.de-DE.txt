@@ -1,1 +1,2 @@
-{"rule":"DE_CASE","sentence":"^\\QAutor: Daia Robbi Date: 23.09.2025 Vorlesung: Informationen und Codierungen Maximale Länge: 14 Seiten Erlaubte Hilfsmittel:\\E$"}
+{"rule":"DE_CASE","sentence":"^\\QAutor: Max Muster Date: xx.xx.xxxx Vorlesung: Vorlesung Name Maximale Länge: 14 Seiten Erlaubte Hilfsmittel: Taschenrechner\\E$"}
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\QAutor: Max Muster Date: xx.xx.xxxx Vorlesung: Vorlesung Name Maximale Länge: 14 Seiten Erlaubte Hilfsmittel: Taschenrechner\\E$"}
