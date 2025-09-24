@@ -67,7 +67,7 @@
   "latex-workshop.hover.preview.cursor.enabled": false,
   "latex-workshop.hover.preview.enabled": false,
 
-  "pasteImage.insertPattern": "\\begin{center}\n\t\t\\includegraphics[width=\\linewidth]{source/pasted-images/${imageFileName}}\n\t\\end{center}",
+  "pasteImage.insertPattern": "\\begin{center}\n\t\t\\includegraphics[width=\\linewidth]{source/pasted-images/${imageFileName}}\n\\end{center}",
   "pasteImage.filePathConfirmInputBoxMode": "onlyName",
   "pasteImage.encodePath": "none",
   "pasteImage.basePath": "${projectRoot}/source/",
