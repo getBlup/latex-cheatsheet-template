@@ -1,16 +1,14 @@
 \documentclass[10pt,landscape,a4paper]{article}
-\usepackage[top=3mm,bottom=3mm,left=3mm,right=3mm]{geometry}
-\usepackage[ngerman]{babel}
-\usepackage[T1]{fontenc}
-\usepackage{multicol}
-
-\setlength{\columnseprule}{0.4pt}
-\setlength{\columnsep}{1mm} 
-\setlength{\parindent}{0pt}
+\usepackage{source/myconfig}
 
 \begin{document}
+\include{source/def}
+
+%Set the default text size to footnotesize 
 \footnotesize
+
 \begin{multicols*}{5}
-\input{source/header}
+\input{source/vorlesungen/01_vorlesung.tex}
+
 \end{multicols*}
 \end{document}

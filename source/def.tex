@@ -1,0 +1,24 @@
+% Section formatting
+\titleformat{\section} % which level
+  {\sffamily\small\bfseries} % font, color, size, weight
+  {\thesection} % section number
+  {1em} % space between number and title
+  {} % before the title text itself
+
+% Spacing before/after sections
+\titlespacing{\section}{0pt}{2ex}{1ex} % {left}{before}{after}
+
+%Subsection formatting
+\titleformat{\subsection}
+  {\sffamily\bfseries} % no color, bold, sans-serif
+  {\thesubsection} % number
+  {1em} % number-title separation
+  {} % before title text
+
+% Spacing before/after subsections
+\titlespacing{\subsection}{0pt}{1.5ex}{0.5ex} % left, before, after
+
+% Formatting for columns
+\setlength{\columnseprule}{0.4pt}
+\setlength{\columnsep}{2mm}
+\setlength{\parindent}{0pt}

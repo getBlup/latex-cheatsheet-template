@@ -1,2 +1,5 @@
 {"rule":"DE_CASE","sentence":"^\\QAutor: Max Muster Date: xx.xx.xxxx Vorlesung: Vorlesung Name Maximale Länge: 14 Seiten Erlaubte Hilfsmittel: Taschenrechner\\E$"}
 {"rule":"GERMAN_SPELLER_RULE","sentence":"^\\QAutor: Max Muster Date: xx.xx.xxxx Vorlesung: Vorlesung Name Maximale Länge: 14 Seiten Erlaubte Hilfsmittel: Taschenrechner\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q. . .\\E$"}
+{"rule":"DE_CASE","sentence":"^\\QLineare Algebra Diskrete Mathematik Informationen und Codierungen Programmieren 1 Wirtschaft für Ingenieure Digital- und Elektrotechnik\\E$"}
+{"rule":"PUNCTUATION_PARAGRAPH_END","sentence":"^\\QLineare Algebra Diskrete Mathematik Informationen und Codierungen Programmieren 1 Wirtschaft für Ingenieure Digital- und Elektrotechnik\\E$"}
