@@ -1,13 +1,19 @@
 \documentclass[10pt,landscape,a4paper]{article}
+%All the package imports are handeld in source/myconfig.sty to remove clutter from this file
 \usepackage{source/myconfig}
 
 \begin{document}
+
+%Import source/def.tex for some styling
 \include{source/def}
 
 %Set the default text size to footnotesize 
 \footnotesize
 
+%Set the amount of columns (the * is important to make the columns static)
 \begin{multicols*}{5}
+
+%Split the actual content into different files and include them here
 \input{source/vorlesungen/01_vorlesung.tex}
 
 \end{multicols*}

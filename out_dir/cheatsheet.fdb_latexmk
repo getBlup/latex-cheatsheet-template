@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1758796714.01471 "c:/Users/daiar/projects/studium/latex/latex-cheatsheet-template/cheatsheet.tex" "out_dir/cheatsheet.pdf" "cheatsheet" 1758796715.9021 0
-  "c:/Users/daiar/projects/studium/latex/latex-cheatsheet-template/cheatsheet.tex" 1758796710 287 5a51bf0fbc07d7ad904275e79343d543 ""
+["pdflatex"] 1758896960.88662 "c:/Users/daiar/projects/studium/latex/latex-cheatsheet-template/cheatsheet.tex" "out_dir/cheatsheet.pdf" "cheatsheet" 1758896962.62018 0
+  "c:/Users/daiar/projects/studium/latex/latex-cheatsheet-template/cheatsheet.tex" 1758896959 572 5efe2e108027bb090ac83993897a85df ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1758561965 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1758563743 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx0800.tfm" 1758562978 3584 269b66e921ba58750c12f7f1c8ea3ebd ""
@@ -44,10 +44,10 @@
   "c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758569924 5574153 af86687748baf417d9e7d549313527be ""
   "c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1758570211 3621636 2a9ff13cc44ccb6de153f75927465df4 ""
   "c:/texlive/2025/texmf.cnf" 1758569890 713 e69b156964470283e0530f5060668171 ""
-  "cheatsheet.tex" 1758796710 287 5a51bf0fbc07d7ad904275e79343d543 ""
-  "out_dir/cheatsheet.aux" 1758796715 614 5c85225b66ed58dd537be3d937c97690 "pdflatex"
-  "out_dir/source/def.aux" 1758796715 425 9de1696898d69ddf996bcfdd2911517d "pdflatex"
-  "source/def.tex" 1758796439 752 a0f6d327e07188752b11548917473128 ""
+  "cheatsheet.tex" 1758896959 572 5efe2e108027bb090ac83993897a85df ""
+  "out_dir/cheatsheet.aux" 1758896962 614 5c85225b66ed58dd537be3d937c97690 "pdflatex"
+  "out_dir/source/def.aux" 1758896962 425 9de1696898d69ddf996bcfdd2911517d "pdflatex"
+  "source/def.tex" 1758896658 752 a0f6d327e07188752b11548917473128 ""
   "source/myconfig.sty" 1758796687 201 dc42df82593a00d692c89f15174fa9a3 ""
   "source/vorlesungen/01_vorlesung.tex" 1758796565 146 88f571cba3702c3263dcc805d9946b07 ""
   (generated)

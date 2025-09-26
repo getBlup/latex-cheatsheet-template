@@ -3,3 +3,5 @@
 {"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q. . .\\E$"}
 {"rule":"DE_CASE","sentence":"^\\QLineare Algebra Diskrete Mathematik Informationen und Codierungen Programmieren 1 Wirtschaft für Ingenieure Digital- und Elektrotechnik\\E$"}
 {"rule":"PUNCTUATION_PARAGRAPH_END","sentence":"^\\QLineare Algebra Diskrete Mathematik Informationen und Codierungen Programmieren 1 Wirtschaft für Ingenieure Digital- und Elektrotechnik\\E$"}
+{"rule":"DE_CASE","sentence":"^\\QFächer:\nDigital- und Elektrotechnik\nDiskrete Mathematik\nInformationen und Codierungen\nLineare Algebra\nProgrammieren 1\nWirtschaft für Ingenieure\\E$"}
+{"rule":"KLEINSCHREIBUNG_KEIN_NAME","sentence":"^\\QFächer:\nDigital- und Elektrotechnik\nDiskrete Mathematik\nInformationen und Codierungen\nLineare Algebra\nProgrammieren 1\nWirtschaft für Ingenieure\\E$"}
