@@ -15,4 +15,3 @@ Fächer:
   - 14 Seiten (einseitig), 7 Seiten (doppelseitig)
 - Wirtschaft für Ingenieure
   - 10 Seiten (einseitig), 5 Seiten (doppelseitig)
-
