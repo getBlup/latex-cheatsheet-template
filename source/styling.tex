@@ -1,6 +1,26 @@
+% Page number formatting
+\AddToHook{shipout/foreground}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[
+      anchor=north east,
+      xshift=-0.2cm,
+      yshift=-0.2cm,
+      draw,
+      circle,
+      fill=yellow,
+      inner sep=2pt
+    ] at (current page.north east) {\thepage};
+  \end{tikzpicture}%
+}
+
 % Formatting for tableofcontents
 \setlength{\cftbeforesecskip}{2pt}
 \setlength{\cftbeforesubsecskip}{0pt}
+
+% Formatting for columns
+\setlength{\columnseprule}{0.4pt}
+\setlength{\columnsep}{2mm}
+\setlength{\parindent}{0pt}
 
 % Section formatting
 \titleformat{\section} % which level
@@ -21,8 +41,3 @@
 
 % Spacing before/after subsections
 \titlespacing{\subsection}{0pt}{1.5ex}{0.5ex} % left, before, after
-
-% Formatting for columns
-\setlength{\columnseprule}{0.4pt}
-\setlength{\columnsep}{2mm}
-\setlength{\parindent}{0pt}
